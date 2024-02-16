@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ICA04 - CSS Grid Forms</title>
+</head>
+
+<header><a href="../index.html" class="link">ICA04 - CSS Grid Forms</a></header>
+
+<body>
+    <div class="site">
+        <form class="form" action="https://thor.cnt.sast.ca/~demo/cmpe2000/ica04_formtest.php" method="post"
+            target="_blank">
+            <input type="hidden" name="hidden_value" value="uyghur" class="hidden">
+
+            <p class="user">
+                <label for="username">Username: </label><br>
+                <input type="text" name="username" id="username" placeholder="your username" maxlength="16" required>
+            </p>
+
+            <p class="password">
+                <label for="pin">Pin: </label><br>
+                <input type="password" name="pin" id="pin" placeholder="your pin" maxlength="6">
+            </p>
+
+            <p class="bytes">
+                <label for="byte_value">Byte Value : </label>
+                <input type="range" name="byte_value" id="byte_value" min="8" max="20" style="width: 90%;">
+            </p>
+
+            <p class="date">
+                <label for="date_value">Best Date : </label>
+                <input type="date" name="date_value" id="date_value" value="1967-09-09">
+            </p>
+
+            <p class="color">
+                <label for="color_value">Best Color : </label>
+                <input type="color" name="color_value" id="color_value" value="#ABCDEF">
+            </p>
+
+            <fieldset class="travel" required>
+                <legend>Preferred Travel: </legend>
+                <input type="radio" name="travel" id="planes" value="Aircraft">
+                <label for="planes">Planes</label><br>
+                <input type="radio" name="travel" id="trains" value="Railway">
+                <label for="trains">Trains</label><br>
+                <input type="radio" name="travel" id="automobiles" value="Car">
+                <label for="automobiles">Automobiles</label>
+            </fieldset>
+
+            <p class="science">
+                <label for="science_fiction">Choice of Sci-Fi: </label>
+                <select name="science_fiction" id="science_fiction">
+                    <option value="Metropolis">Really Old</option>
+                    <option value="Star Trek">Old</option>
+                    <option value="Star Wars" selected>Kinda Old</option>
+                    <option value="Dune">Dune</option>
+                </select>
+            </p>
+
+            <p class="acknowledge-class">
+                <label for="acknowledge">Acknowledge Use : </label>
+                <input type="checkbox" name="acknowledge" id="acknowledge">
+            </p>
+
+            <p class="buttons">
+                <input type="reset" value="Reset Form" id="reset" style="width: 100%;">
+                <input type="submit" value="Test Submission" id="submit" style="width: 100%;">
+            </p>
+        </form>
+    </div>
+</body>
+<footer>
+    <p>&copy; Uyghur Yaghma</p>
+    Last Modified: <script>document.write(document.lastModified)</script>
+</footer>
+
+</html>

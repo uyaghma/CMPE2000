@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="text/javascript"></script>
+    <title>ICA05</title>
+</head>
+<body>
+    <header class="header">
+        <h1>ICA05 JavaScript Intro</h1>
+    </header>
+
+    <div class="site" id="site">
+        <div class="caption">Redirect Using Locations:</div>
+        <div class="element redirect">
+            <button type="button" id="redirect">
+                <img src="../../images/google.png" alt="google" height="20px">
+            </button>
+        </div>
+
+        <div class="caption">Background Color Picker:</div>
+        <div class="element color">
+            <input type="color" name="colorPicker" id="colorPicker">
+            <button type="button" id="setBack">Set Background</button>
+        </div>
+
+        <div class="caption">Current Dimensions:</div>
+        <div class="element">
+            <button type="button" id="dimensions">Show Dimensions</button>
+            <input type="text" name="dimensions" id="dimensions-text">
+        </div>
+
+        <div class="caption">What time is it:</div>
+        <div class="element time">
+            <button type="button" id="now">Now !!!!</button>
+        </div>
+
+        <div class="caption">Secret Agent, Man:</div>
+        <div class="element secret">
+            <button type="button" id="secret">Who's my daddy?</button>
+        </div>
+
+        <div class="caption">Prompt Test:</div>
+        <div class="element prompt">
+            <button type="button" id="prompt">?</button>
+        </div>
+
+        <div class="caption" id="tuxID">Make a Tux: </div>
+        <div class="element tux">
+            <button type="button" id="tux">
+                <img src="../../images/chaewon.png" alt="chaewon" height="20px">
+            </button>
+        </div>
+
+        <div class="caption">Dynamic Update:</div>
+        <div class="element">
+            <input type="range" name="updateSlider" id="updateSlider" value="106" min="50" max="300">
+            <button type="button" id="dynamicButton" disabled>Dynamic Width</button>
+        </div>
+
+        <div class="caption">Make a Table: </div>
+        <div class="element">
+            <input type="range" name="columnSlider" id="columns" min="-12" max="12">
+            <label for="columnSlider" id="columnVal"></label>
+            <input type="range" name="rowSlider" id="rows" min="-12" max="12">
+            <label for="rowSlider" id="rowVal"></label>
+            <button type="button" id="tablize">Tablize</button>
+        </div>
+    </div>
+
+    <div id="table"></div>
+    <footer id="footer">&copy; Uyghur Yaghma
+        <p id="lastMod">Last Modified: </p>
+    </footer>
+</body>
+</html>

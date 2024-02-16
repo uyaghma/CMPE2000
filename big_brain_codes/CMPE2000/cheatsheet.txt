@@ -1,0 +1,101 @@
+Include jQuery:
+   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+Ajax GET Request:                                   Ajax POST Request:
+   $.ajax({                                             $.ajax({
+       url: 'https://api.example.com/data',                url: 'https://api.example.com/save',
+       method: 'GET',                                      method: 'POST',
+       dataType: 'json',                                   dataType: 'json',
+       success: function(data) {                           data: { key1: 'value1', key2: 'value2' },
+           // Handle successful response                   success: function(data) {
+       },                                                      // Handle successful response
+       error: function(error) {                            },
+           // Handle error                                 error: function(error) {
+       }                                                       // Handle error
+   });                                                     }
+                                                        });
+
+Shorthand GET Request:
+   $.get('https://api.example.com/data', function(data) {
+       // Handle response
+   });
+
+Shorthand POST Request:
+   $.post('https://api.example.com/save', { key1: 'value1', key2: 'value2' }, function(data) {
+       // Handle response
+   });
+
+**Selecting Elements:**                     **Attribute Manipulation:**
+- Select by Tag Name:                       - Get or Set Attribute:
+    $('tagname')                                // Get attribute value
+- Select by ID:                                 var attrValue = $('#elementId').attr('attributeName');    
+    $('#elementId')                             // Set attribute value
+- Select by Class:                              $('#elementId').attr('attributeName', 'NewValue');
+    $('.className')                         - Remove Attribute:
+- Select by Attribute:                          $('#elementId').removeAttr('attributeName');
+    $('[attribute=value]')
+
+**Modifying Content:**                          **CSS Manipulation:**
+- Get or Set Text Content:                      - Get or Set CSS Property:
+    // Get text content                             // Get CSS property value
+    var text = $('#elementId').text();              var cssValue = $('#elementId').css('property');
+    // Set text content                             // Set CSS property value
+    $('#elementId').text('New Text');               $('#elementId').css('property', 'value');
+- Get or Set HTML Content:                      - Add or Remove Class:
+    // Get HTML content                             // Add class
+    var htmlContent = $('#elementId').html();       $('#elementId').addClass('newClass');
+    // Set HTML content                             // Remove class
+    $('#elementId').html('<p>New HTML</p>');        $('#elementId').removeClass('oldClass');
+
+
+
+
+
+
+
+**append() Function:**
+     // Append a new paragraph to an element with id "container"
+     $('#container').append('<p>New content</p>');
+**first() Function:**
+     // Select the first paragraph element in the document
+     $('p').first().css('color', 'red');
+**last() Function:**
+     // Select the last paragraph element in the document
+     $('p').last().css('color', 'blue');
+**next() Function:**
+     // Select the next sibling of an element with class "current"
+     $('.current').next().addClass('highlight');
+**parent() Function:**
+     // Select the parent of an element with id "childElement"
+     $('#childElement').parent().css('border', '1px solid black');
+**empty() Function:**
+   - Example:
+     // Empty the content of an element with id "container"
+     $('#container').empty();
+
+**done() Function:**                                **fail() Function:**
+   - Example:                                          - Example:
+     $.ajax({                                            $.ajax({
+         url: 'https://api.example.com/data',                url: 'https://api.example.com/data',
+         method: 'GET',                                      method: 'GET',
+         dataType: 'json'                                    dataType: 'json'
+     }).done(function(data) {                            }).fail(function(jqXHR, textStatus, errorThrown) {
+         console.log('Success:', data);                      console.error('Error:', textStatus, errorThrown);
+     });                                                 });
+
+**always() Function:**
+   - Example:
+     $.ajax({
+         url: 'https://api.example.com/data',
+         method: 'GET',
+         dataType: 'json'
+     }).always(function(data, textStatus, jqXHR) {
+         console.log('Request completed, regardless of success or failure.');
+     });
+
+
+
+
+
+
+

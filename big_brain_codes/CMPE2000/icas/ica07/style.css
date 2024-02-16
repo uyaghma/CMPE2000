@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
+
+body {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    #site {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+        #images {
+            grid-column: 1/4;
+        }
+        #prevC {
+            display: flex;
+            grid-column: 1/2;
+            justify-content: flex-end;
+        }
+        #nextC {
+            display: flex;
+            grid-column: 3/4;
+            justify-content: flex-start;
+        }
+        #caption {
+            display: flex;
+            grid-column: 2/3;
+            flex-direction: column;
+            font-style: italic;
+            font-weight: bold;
+            #imgCaption {
+                margin: 0px;
+            }
+        }
+    }
+}
+
+.header {
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: blue;
+    color: azure;
+    text-align: center;
+    text-shadow: 0px 1px 0px #c7c8ca, 0px 2px 0px #b1b3b6, 0px 3px 0px #9d9fa2, 0px 4px 0px #8a8c8e, 0px 5px 0px #77787b, 0px 6px 0px #636466, 0px 7px 0px #4d4d4f, 0px 8px 7px #001135;
+}
+#footer {
+    font-size: 12px;
+    background-color: tan;
+    padding: 5px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+#currentImg {
+    border: 5px double;
+    width: auto;
+}
+
+@media screen and (max-width: 930px) {
+    #currentImg {
+        width: 95%;
+        height: auto;
+    }
+}

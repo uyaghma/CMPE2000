@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    .site {
+        background-color: aqua;
+    }
+    .header,
+    #footer {
+        background-color: purple;
+        color: greenyellow;
+        text-align: center;
+        margin-top: 10px;
+    }
+    #table {
+        display: flex;
+        margin-top: 10px;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    #footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+}
+
+.redirect button,
+.time button,
+.secret button,
+.prompt button,
+.tux button {
+    width: 100%;
+}
+
+.redirect button {
+    height: 30px;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+
+        .site {
+            grid-column: 2/3;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 25px;
+            margin-top: 25px;
+
+            .caption {
+                grid-column: 1/2;
+                text-align: right;
+                padding-top: 5px;
+                color: white;
+            }
+
+            .element {
+                grid-column: 2/3;
+                margin: 0;
+                text-align: left;
+            }
+        }
+
+        .header {
+            grid-column: 1/4;
+            background-color: blue;
+            color: azure;
+            text-align: center;
+            text-shadow: 0px 1px 0px #c7c8ca, 0px 2px 0px #b1b3b6, 0px 3px 0px #9d9fa2, 0px 4px 0px #8a8c8e, 0px 5px 0px #77787b, 0px 6px 0px #636466, 0px 7px 0px #4d4d4f, 0px 8px 7px #001135;
+        }
+
+        #footer {
+            grid-column: 1/4;
+            background: none;
+            color: black;
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #table {
+            display: flex;
+            grid-column: 1/4;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+    }
+    
+    .color input {
+        width: 30%;
+    }
+}

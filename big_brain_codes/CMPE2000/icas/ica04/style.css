@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+}
+
+input {
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.site {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px 20px;
+    .form {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px 15px;
+        align-items: center;
+    }
+}
+
+header {
+    background-color: blue;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    text-shadow: 0px 1px 0px #c7c8ca, 0px 2px 0px #b1b3b6, 0px 3px 0px #9d9fa2, 0px 4px 0px #8a8c8e, 0px 5px 0px #77787b, 0px 6px 0px #636466, 0px 7px 0px #4d4d4f, 0px 8px 7px #001135;
+}
+
+a {
+    color: inherit; 
+    text-decoration: inherit;
+}
+
+p {
+    margin: 0;
+}
+
+legend {
+    font-style: italic;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    font-size: 12px;
+    background-color: tan;
+    padding: 5px;
+    text-align: center;
+}
+
+#username {
+    width: 70%;
+}
+
+#pin {
+    width: 60%;
+}
+
+#science_fiction {
+    background-color: yellow;
+}
+
+#reset, #submit {
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+}
+
+.travel {
+    border-color: blue;
+}
+
+@media screen and (min-width: 800px) {
+    .site {
+        display: grid;
+        grid-template-columns: 1fr 6fr 1fr;
+        .form {
+            display: grid;
+            grid-column: 2/3;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: space-between;
+            grid-gap: 50px;
+            align-items: normal;
+            .user, .date, .science {
+                grid-column: 1/2;
+            }
+            .password, .color, .acknowledge-class {
+                grid-column: 2/3;
+            }
+            .bytes, .travel {
+                grid-column: 3/4;
+            }
+            .buttons {
+                grid-column: 1/4;
+            }
+            background-color: lightblue;
+            padding: 5px 5px 0px 5px;
+        }
+        background-image: url(../../images/chaewon.png);
+        background-size: 50px;
+        background-repeat: repeat;
+    }
+}

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
+
+
+html, body{
+    height: 100%;
+}
+     
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #FFFFFF;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 12pt;
+}
+         
+h1, h2, h3{
+    margin: 0;
+    padding: 0;
+    color: #404040;
+}
+     
+p, ol, ul{
+    margin-top: 0;
+}
+ 
+p {
+    line-height: 180%;
+}
+ 
+ol, ul{
+    padding: 0;
+    list-style: none;
+}
+
+header {
+    overflow: hidden;
+}
+
+#navbar {
+    height: 90px;
+    background: #0074D9;
+}
+
+#logo {
+    height: 90px;
+    width: 30%;
+    float: left;
+    margin: none;
+}
+
+#logo h1 {
+    width: 60%;
+    height: 100%;
+    padding: 26.5px 0px;
+    margin-left: 10px;
+    text-align: left;
+    display: inline-block;
+    font-size: 30px;
+    color: #FFF;
+}
+
+#menu {
+    float: right;
+    width: 70%;
+    height: 100%;
+    margin: none;
+}
+
+#menu ul{
+    text-align: center;
+    float: right;
+    margin: none;
+    background: #0074D9;
+}
+     
+#menu li{
+    display: inline-block;
+    padding: none;
+    margin: none;
+}
+     
+#menu li a, #menu li span{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 90px;
+    width: 115px;
+}
+     
+#menu li a{
+         
+    color: #FFF;
+}
+     
+#menu li:hover a, #menu li span{
+    background: #FFF;
+    color: #0074D9;
+    text-decoration: none;
+}
+
+#active {
+    background: #FFF;
+    color: #0074D9;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 90px;
+    width: 115px;
+}

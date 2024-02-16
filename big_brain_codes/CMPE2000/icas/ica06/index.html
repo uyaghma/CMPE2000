@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="text/javascript"></script>
+    <title>ICA06</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>ICA06 - Purchase Ride</h1>
+    </header>
+
+    <div class="site">
+        <form class="form" action="https://thor.cnt.sast.ca/~demo/cmpe2000/ica04_formtest.php" method="post"
+            target="_blank">
+            <div class="labels maker">
+                <p>Make:</p>
+            </div>
+            <div class="inputs make">
+                <select name="brand" size="5" id="makes">
+                    <option value="">Please Pick One</option>
+                    <option value="Honda">Japanese</option>
+                    <option value="Ducati">European</option>
+                    <option value="Harley">American</option>
+                    <option value=""></option>
+                </select>
+                <p id="image">
+
+                </p>
+            </div>
+
+            <div class="labels models">
+                <p>Model:</p>
+            </div>
+            <div class="inputs model" id="models">  
+                <label for="scooter"><input type="radio" name="model" id="scooter" value="5000" model="Scooter">Scooter</label>
+                <label for="naked"><input type="radio" name="model" id="naked" value="10000" model="Naked">Naked</label>
+                <label for="track"><input type="radio" name="model" id="track" value="15000" model="Track">Sport</label>
+            </div>
+
+            <div class="labels option">
+                <p>Options:</p>
+            </div>
+            <div class="inputs options">
+                <label for="ABS"><input type="checkbox" name="ABS" id="absId" value="300">Automatic Braking System</label>
+                <label for="TCS"><input type="checkbox" name="TCS" id="tcsId" value="400">Traction Control System</label>
+                <label for="FMM"><input type="checkbox" name="FMM" id="fmmId" value="500">Flight Mode Mapping</label>
+            </div>
+
+            <div class="labels payments">
+                <p>Pre-Payment:</p>
+            </div>
+
+            <div class="inputs payment">
+                <input class="mono" type="text" name="down_payment" id="down_paymentId" style="width: 100%;">
+            </div>
+
+            <div class="output mono">
+                
+            </div>
+
+            <div class="submit">
+                <input type="submit" value="Purchase" id="submit" style="width: 100%;">
+            </div>
+        </form>
+    </div>
+
+    <footer id="footer">
+        <p>&copy; Uyghur Yaghma</p>
+        Last Modified: <script>document.write(document.lastModified)</script>
+    </footer>
+</body>
+
+</html>

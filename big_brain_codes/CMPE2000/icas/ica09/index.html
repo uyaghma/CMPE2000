@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>ICA09</title>
+</head>
+<body>
+    <header class="header">
+        <h1>ICA09 - jQuery Ajax Intro</h1>
+    </header>
+
+    <div id="site">
+        <div id="container1">
+            <p class="labels name">Name: </p>
+            <input type="text" name="name" id="input-name">
+            <p class="labels hobby">Hobby: </p>
+            <input type="text" name="hobby" id="input-hobby">
+            <p class="labels howmuch">How much I like it? </p>
+            <input type="range" name="howmuch" id="slider" value="8" min="1" max="13">
+            <input type="button" value="Call with Get" id="callWithGet">
+            <p id="result"></p>
+        </div>
+    
+        <div id="container2">
+            <label for="row-slider" class="labels rows">Row Count:</label>
+            <input type="range" name="rows" id="row-slider" value="5" min="1" max="13">
+            <label for="col-slider" class="labels columns">Column Count:</label>
+            <input type="range" name="cols" id="col-slider" value="5" min="1" max="13">
+            <input type="button" value="Post to Make Table" id="makeTable">
+            <div id="table">
+                
+            </div>
+        </div>
+    
+        <div id="container3">
+            <input type="button" value="Generate Numbers and Show" id="genNum">
+            <div id="target1"></div>
+            <input type="button" value="Post and Show Modified" id="post">
+            <div id="target2"></div>
+        </div>
+
+        <input type="button" value="Fail" id="fail">
+    </div>
+
+    <footer id="footer">
+        <p>&copy; Uyghur Yaghma</p>
+        Last Modified: <script>document.write(document.lastModified)</script>
+    </footer>
+</body>
+</html>
